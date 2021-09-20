@@ -54,6 +54,7 @@ border:none;
 border-radius: 4px;
 font-size: 18px;
 margin:0 auto;
+cursor:pointer;
 }
 `;
 
