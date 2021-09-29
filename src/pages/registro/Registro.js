@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Content,
   SubContent,
@@ -16,22 +16,44 @@ import Relogio from '../../assets/RelogioMenor.svg';
 import RelogioGrande from '../../assets/RelogioGrande.svg';
 import LapisEditar from '../../assets/LapisEditar.svg';
 import Salvar from '../../assets/Salvar.svg';
+import {getRegistro} from '../../services/MockRegistro'
 
-const registro = () => {
+
+const Registro = () => {
+
+const [registro, setRegistro] = useState([]);
+
+
+useEffect(() => {
+  getRegistro().then((response) => {
+    setRegistro(response);
+  });
+}, []);
+
+
   return (
     <Content>
       <Header />
       <SubContent>
+      {/* {registro && registro.map((data) => ( */}
+      <li>
+     
         <div>
+   
           <section>
             <div>
               <img src={Relogio} alt='relogio-menor' />
+              
             </div>
+       
             <p>
               Hoje
+             
+             
               <span>Quinta-feira</span>
             </p>
           </section>
+         
         </div>
         <div>
           {' '}
@@ -55,6 +77,7 @@ const registro = () => {
           {' '}
           <Section4>
             <p>
+             
               Retorno Pausa
               <span>00:00</span>
             </p>
@@ -82,10 +105,12 @@ const registro = () => {
               <img src={Salvar} alt='disquete salvar' />
             </ImgSalvar>
           </Section6>
-        </div>
+        </div> 
+                       </li>
+                          {/* ))}  */}
       </SubContent>
     </Content>
   );
 };
 
-export default registro;
+export default Registro;

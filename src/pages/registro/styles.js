@@ -11,9 +11,15 @@ export const SubContent = styled.div`
   height: 680px;
   background: #ffffff;
   margin: 16px;
-  margin-bottom: 32px;
-  display: flex;
-  justify-content: space-around;
+
+
+  li{
+    margin: 16px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-around;
+
+  }
 
   section {
     display: flex;
