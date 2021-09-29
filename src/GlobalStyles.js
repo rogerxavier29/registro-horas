@@ -56,6 +56,46 @@ font-size: 18px;
 margin:0 auto;
 cursor:pointer;
 }
+
+div.ant-picker-body{
+display:flex;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+
+div.ant-radio-group ant-radio-group-outline ant-radio-group-small ant-picker-calendar-mode-switch{
+display:flex;
+}
+
+div.ant-picker-calendar-header{
+  display:flex;
+  justify-content:space-around;
+  margin-top:20px;
+  
+}
+
+input#rc_select_0.ant-select-selection-search-input{
+display:none;
+}
+input#rc_select_1.ant-select-selection-search-input{
+display:none;
+}
+
+button.ant-btn{
+margin:16px;
+width: 200px;
+height: 51px;
+align-items: center;
+text-align: center;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #3E4756;
+border-radius: 5px;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+}
+
 `;
 
 export default GlobalStyle;

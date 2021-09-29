@@ -6,11 +6,16 @@ export const Content = styled.div`
   background: #f2fdfc;
 `;
 
+export const Content2 = styled.div`
+  display: flex;
+`;
+
 export const SubContent = styled.div`
   width: 941px;
   height: 680px;
   background: #ffffff;
   margin: 16px;
+  cursor: pointer;
 
   li {
     display: flex;
@@ -41,6 +46,7 @@ export const SubContent = styled.div`
 export const Section2 = styled.section`
   width: 60px;
   display: flex;
+  cursor: pointer;
   p {
     font-size: 16px;
     display: grid;
@@ -57,6 +63,7 @@ export const Section3 = styled.section`
   width: 100px;
   display: flex;
   flex-wrap: nowrap;
+  cursor: pointer;
   p {
     font-size: 16px;
     display: grid;
@@ -73,6 +80,7 @@ export const Section4 = styled.section`
   width: 121px;
   display: flex;
   flex-wrap: nowrap;
+  cursor: pointer;
   p {
     font-size: 16px;
     display: grid;
@@ -89,6 +97,7 @@ export const Section5 = styled.section`
   width: 5px;
   display: flex;
   flex-wrap: nowrap;
+  cursor: pointer;
   p {
     font-size: 16px;
     display: grid;
@@ -114,6 +123,7 @@ export const ImgRelogio = styled.div`
   border-radius: 50%;
   text-align: center;
   align-items: center;
+  cursor: pointer;
   img {
     margin-top: 7px;
   }
@@ -126,6 +136,7 @@ export const ImgEditar = styled.div`
   border-radius: 50%;
   text-align: center;
   align-items: center;
+  cursor: pointer;
   img {
     margin-top: 8px;
   }
@@ -138,7 +149,27 @@ export const ImgSalvar = styled.div`
   border-radius: 50%;
   text-align: center;
   align-items: center;
+  cursor: pointer;
   img {
     margin-top: 8px;
   }
+`;
+
+export const DivCalendar = styled.div`
+  width: 300px;
+  border: 1px solid #f0f0f0;
+  border-radius: 2px;
+  background: #fff;
+  border-top: 1px solid #e6e6e6;
+  margin-bottom: 16px;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+`;
+
+export const Horas = styled.div`
+  margin-top: 20px;
+  border-top: 1px solid #e6e6e6;
+  display: grid;
+  justify-content: center;
 `;

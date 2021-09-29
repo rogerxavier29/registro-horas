@@ -44,7 +44,7 @@ export const getRegistro = async () => {
     {
       id: 4,
       dia: '06/09',
-      diaSemana: 'segunda-feira',
+      diaSemana: 'Segunda-feira',
       horaInicial: new Date(),
       horaSaida: new Date(),
       InicioPausa: new Date(),
