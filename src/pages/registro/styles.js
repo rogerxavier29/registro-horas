@@ -12,24 +12,21 @@ export const SubContent = styled.div`
   background: #ffffff;
   margin: 16px;
 
-
-  li{
-    margin: 16px;
-    margin-bottom: 32px;
+  li {
     display: flex;
     justify-content: space-around;
-
   }
 
   section {
     display: flex;
 
     div {
-      margin-right: 15px;
+      margin-right: 13px;
       margin-top: 40px;
     }
   }
   p {
+    width: 121px;
     font-size: 24px;
     display: grid;
     font-weight: bold;

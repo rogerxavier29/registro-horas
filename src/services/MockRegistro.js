@@ -6,8 +6,8 @@ export const getRegistro = async () => {
       diaSemana: 'Quinta-feira',
       horaInicial: new Date(),
       horaSaida: new Date(),
-      InicioPausa: new Date(),
-      RetornoPausa: new Date(),
+      inicioPausa: new Date(),
+      retornoPausa: new Date(),
       feriado: false, // icone estrela
       findSemana: false, // icone -
       hoje: true, // icone relegio
@@ -81,4 +81,9 @@ export const getRegistro = async () => {
       diasPassado: false,
     },
   ];
+  try {
+    return Promise.resolve(data);
+  } catch (error) {
+    return Promise.reject(error.response);
+  }
 };
